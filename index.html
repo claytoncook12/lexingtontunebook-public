@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexington Tunes</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- Javascript Files -->
+    <script src="static/js/abcjs-plugin-min.js"></script>
+    <script src="static/js/abcjs-basic-min.js"></script>
+</head>
+<body>
+
+<!-- Main Content -->
+<div class="main">
+    
+<h1>Lexington Tune Book</h1>
+
+<h2 class="tune-type-title">Reels</h2>
+<hr>
+
+    
+    <h3 class="tune-title" id="Concertina Reel">Concertina Reel</h3>
+    <h4 class="tune-id">ID:1</h4>
+    <p>
+<div id="tune1" class="tune">
+<pre>
+T: Concertina Reel
+R:reel
+M:C|
+K: D
+  A2FA BAFA|A2FA BAFA|B2cA BAcA|B2cA BAFG |
+  A2FA BAFA|A2FA BAFE|FABc d2dB|AFEF D2FG:|
+|:Add2 Add2|AddA BAFA|B2cA BAcA|BAcA BAFG |
+  Add2 Add2|AddA BAFE|FABc d2dB|AFEF D4  :|
+</pre>
+</div>
+<div class="abc-notation-raw">
+<h4>ABC Notation</h4>
+<pre>
+T: Concertina Reel
+R:reel
+M:C|
+K: D
+  A2FA BAFA|A2FA BAFA|B2cA BAcA|B2cA BAFG |
+  A2FA BAFA|A2FA BAFE|FABc d2dB|AFEF D2FG:|
+|:Add2 Add2|AddA BAFA|B2cA BAcA|BAcA BAFG |
+  Add2 Add2|AddA BAFE|FABc d2dB|AFEF D4  :|
+</pre>
+</div>
+    </p>
+    
+
+
+<h2 class="tune-type-title">Jigs</h2>
+<hr>
+
+    
+
+
+
+</div>
+
+
+<!-- After Javascript -->
+
+<script type="text/javascript">
+    var els = document.getElementsByClassName('tune');
+    
+    var visualOptions = { responsive: 'resize' };
+    for (let index = 0; index < els.length; index++) {
+        ABCJS.renderAbc(els[index].id,els[index].textContent,visualOptions)
+        // ABCJS.renderAbc(els[index].id,els[index].textContent)
+    }
+</script>
+
+</body>
+</html>
