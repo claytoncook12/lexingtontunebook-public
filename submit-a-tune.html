@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMA Tunes</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- Additional CSS Content -->
+    
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  padding-top: 500%;
+}
+
+.responsive-iframe-googleform {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
+    <!-- Javascript Files -->
+    <script src="static/js/abcjs-basic-min.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <a href="index.html">
+        <img 
+        src="static/images/KIMAlogo500.png"
+        style="width: 80px;"
+    >
+    </a>
+    <h1 class="header-title">Kentucky Irish Music Academy<br>Tune Book</h1>
+    <div class="navigation">
+        <a href="index.html">Sets</a>
+        <a href="tune.html">Tunes</a>
+        <a href="todo.html">To Do List</a>
+        <a href="submit-a-tune.html">Submit A Tune</a>
+        <a href="tune_index.html">Tune Index</a>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+    
+<div class="container">
+    <iframe 
+    class="responsive-iframe-googleform"
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfOrrOdbPMFOz_Zq335PHWjB6UzqZq_cqVCCs1Dn6bw-v4pNQ/viewform?embedded=true"
+    frameborder="0" marginheight="0" marginwidth="0">
+    Loading…
+</iframe>
+</div>
+
+</div>
+
+<!-- Back to Top Btn -->
+<div style="position:fixed; bottom: 0; padding: 10px; width:100%">
+    <div style="margin: 0 auto; width: 90vw; max-width: 600px;">
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top"
+            style="float: right; padding: 3px; display: none;"
+        >
+            <small>&#8593;</small>
+        </button>
+    </div>
+</div>
+
+<!-- Bottom Padding -->
+<div class="bottom-padding"></div>
+
+<!-- After Javascript -->
+
+<script src="static/js/backtotopbtn.js"></script>
+</body>
+</html>
