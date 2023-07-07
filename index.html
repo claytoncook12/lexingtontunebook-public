@@ -12,6 +12,39 @@
 
     <!-- Additional CSS Content -->
     
+<style>
+.accordion {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+  font-size: 20px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: rgba(0, 0, 0, 0);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+</style>
+
 
     <!-- Javascript Files -->
     <script src="static/js/abcjs-basic-min.js"></script>
@@ -47,25 +80,28 @@
     
         
         <li class="set-name">
-            Cooley's - Wise Maid, The
-            <div class="tune-additional-data">
-                
-                    <h4>Audio References</h4>
+            <button class="accordion">
+                Cooley's (Edor) - Wise Maid, The (Dmaj)
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
                     
-                        <div class="audio-container">
-                            <h5 class="audio-title">Cooley's - Wise Maid (unaccompanied)</h5>
-                            <h5>Instrument: flute</h5>
-                            <audio controls>
-                                <source src="static/audio/Cooley's - Wise Maid - flute- 80 bpm.mp3" type="audio/mp3">
-                            </audio>
-                        </div>
+                        <h4>Audio References</h4>
+                        
+                            <div class="audio-container">
+                                <h5 class="audio-title">Cooley's - Wise Maid (unaccompanied)</h5>
+                                <h5>Instrument: flute</h5>
+                                <audio controls>
+                                    <source src="static/audio/Cooley's - Wise Maid - flute- 80 bpm.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        
                     
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#cooleys">
-                    <div id="cooleys" class="tune" >
-                        <pre>T: Cooley's
+                    <a href="tune.html#cooleys">
+                        <div id="cooleys" class="tune" >
+                            <pre>T: Cooley's
 R: Reel
 M: 4/4
 L: 1/8
@@ -74,12 +110,12 @@ K: Edor
 "Em"EBBA B2EB|B2AB defg|"D"afec dBAF|DEFD "Em"E2:|
 |:gf|"Em"eBB2 eBgB|eBB2 gedB|"D"A2FA DAFA|A2FA defg|
 "Em"eBB2 eBgB|eBB2 defg|"D"afec dBAF|DEFD "Em"E2:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#wise-maid-the">
-                    <div id="wise-maid-the" class="tune" >
-                        <pre>T: The Wise Maid
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#wise-maid-the">
+                        <div id="wise-maid-the" class="tune" >
+                            <pre>T: The Wise Maid
 R: Reel
 M: 4/4
 L: 1/8
@@ -88,33 +124,37 @@ K: Dmaj
 "D"F3G FEDE|FAAB AFED|d2eg fdec|1) "A"dBAG "D"FDD2:||2) "A"dBAG "D"FDFA||
 |:"D"d2AG FDFA|dfaf "A"gfeg|"D"fAdf "A"eAce|"G"dfed "A"cAA2|
 "G"BDGB "D"ADFA|dfaf gfed|"G"Bdce "D"dBAG|"A"FGEF "D"D2FA:||"A"FGEF "D"D4||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Concertina Reel - Ships are Sailing - Father Kelly's
-            <div class="tune-additional-data">
-                
-                    <h4>Audio References</h4>
+            <button class="accordion">
+                Concertina Reel - Ships are Sailing - Father Kelly's
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
                     
-                        <div class="audio-container">
-                            <h5 class="audio-title">The Concertina - Ships Are Sailing- Father Kelly's (unaccompanied)</h5>
-                            <h5>Instrument: fiddle</h5>
-                            <audio controls>
-                                <source src="static/audio/05 The Concertina_Ships Are Sailing_Father Kelly's (unaccompanied).mp3" type="audio/mp3">
-                            </audio>
-                        </div>
+                        <h4>Audio References</h4>
+                        
+                            <div class="audio-container">
+                                <h5 class="audio-title">The Concertina - Ships Are Sailing- Father Kelly's (unaccompanied)</h5>
+                                <h5>Instrument: fiddle</h5>
+                                <audio controls>
+                                    <source src="static/audio/05 The Concertina_Ships Are Sailing_Father Kelly's (unaccompanied).mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        
                     
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#concertina-reel">
-                    <div id="concertina-reel" class="tune" >
-                        <pre>T: Concertina Reel
+                    <a href="tune.html#concertina-reel">
+                        <div id="concertina-reel" class="tune" >
+                            <pre>T: Concertina Reel
 R: reel
 M: C|
 K: D
@@ -122,12 +162,12 @@ K: D
   A2FA BAFA|A2FA BAFE|FABc d2dB|AFEF D2FG:|
 |:Add2 Add2|AddA BAFA|B2cA BAcA|BAcA BAFG |
   Add2 Add2|AddA BAFE|FABc d2dB|AFEF D4  :|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#ships-are-sailing">
-                    <div id="ships-are-sailing" class="tune" >
-                        <pre>T: Ships are Sailing
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#ships-are-sailing">
+                        <div id="ships-are-sailing" class="tune" >
+                            <pre>T: Ships are Sailing
 R: reel
 M: C|
 K: Em
@@ -135,12 +175,12 @@ K: Em
 "Em"Beed BcdB|"D"ADFD ADFA|"Em"E3F GFGA|1) "Em"Beed e4:|2) "Em"Beed e3f||
 "Em"g3a  bgeg|"D"f2fg afdf|"Em"gfga bgeg|"D"fede "Em"e3f|
 "Em"g2ga bgeg|"D"fefg afdf|"G"g2bg "D/F#"fgaf|1) "Em"edef "D"gfef:|2) "Em"edef "D"gfed||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#father-kellys">
-                    <div id="father-kellys" class="tune" >
-                        <pre>T: Father Kelly's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#father-kellys">
+                        <div id="father-kellys" class="tune" >
+                            <pre>T: Father Kelly's
 R: Reel
 M: C|
 K:G
@@ -148,22 +188,26 @@ K:G
 "G"B2GB "D/F#"AGEG|"G"DGGE "G/B"GABc|"C"d2Bd  gdBd|1) "D"cFEF "G"G3A :|2) "D"cAFA "G"GABc||
 "G"d2Bd gdBd|dGBd gdBd|"A"e2^ce "A/C#"agfe|"D"defg agfe|
 "G"d2Bd gdBd|"G/B"dGBd gdBd|"C"c2Ac  "Am"BAGB|1) "D"AGFA "G"GABc :|2) "D"AGFA "G"G3A||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Sally Gardens - Merry Blacksmith
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Sally Gardens - Merry Blacksmith
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#sally-gardens">
-                    <div id="sally-gardens" class="tune" >
-                        <pre>T: Sally Gardens
+                    <a href="tune.html#sally-gardens">
+                        <div id="sally-gardens" class="tune" >
+                            <pre>T: Sally Gardens
 R: Reel
 M: C|
 K: G
@@ -171,12 +215,12 @@ BA| G2DG B2GB|dBeB dBAB|d2Bd efge|   dBAB GEDE |
     G2DG B2GB|dBeB dBAB|d2Bd efge|1) dBAB G2BA:|2) dBAB GABc||
   |:dggf g2de|g2bg aged|eaag a2eg|   a2bg ageg |
     dggf g2de|g2bg ageg|d2Bd efge|1) dBAB GABc:|2) dBAB G2BA||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#merry-blacksmith">
-                    <div id="merry-blacksmith" class="tune" >
-                        <pre>T: Merry Blacksmith
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#merry-blacksmith">
+                        <div id="merry-blacksmith" class="tune" >
+                            <pre>T: Merry Blacksmith
 R: Reel
 M: C|
 K: G
@@ -184,9 +228,10 @@ K: G
   d2dA BAFA|ABdA BAFA|ABde f2ed|BAFE D4  :|
 |:a2ag f2fe|d2dA BAFA|ABde f2ed|BAFE efge |
   a2ag f2fe|d2dA BAFA|ABde f2ed|BAFE D4  ||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -236,14 +281,17 @@ K: G
     
         
         <li class="set-name">
-            Lanigan's Ball - Whistling Postman, The - Out On The Ocean
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Lanigan's Ball - Whistling Postman, The - Out On The Ocean
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#lanigans-ball">
-                    <div id="lanigans-ball" class="tune" >
-                        <pre>T: Lanigan's Ball
+                    <a href="tune.html#lanigans-ball">
+                        <div id="lanigans-ball" class="tune" >
+                            <pre>T: Lanigan's Ball
 R: Jig
 M: 6/8
 L: 1/8
@@ -252,12 +300,12 @@ K: Edor
 "Em"EFE G2A|B2A Bcd|"C"edB =cBA|"Bm"BGE "Em"E2:|
 |:d|"Em"e2f gfe|"D"fag fed|"Em"e2f gfe|fdB "Bm"B2d|
 "Em"e2f gfe|"D"fag fed|"C"edB =cBA|"Bm"BGE "Em"E2:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#whistling-postman-the">
-                    <div id="whistling-postman-the" class="tune" >
-                        <pre>T: The Whistling Postman
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#whistling-postman-the">
+                        <div id="whistling-postman-the" class="tune" >
+                            <pre>T: The Whistling Postman
 C: Charlie Mulvihill
 R: Jig
 M: 6/8
@@ -267,12 +315,12 @@ K: Dmaj
 "D"f2f edB|AFA BAF|DFA "G"BAB|"A"cBc "D"d2:|
 |:e|"D"f2f afd|"G"gef gag|"D"fdf afa|baf "A"ede|
 "D"f2f edB|AFA BAF|DFA "G"BAB|"A"cBc "D"d2:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#out-on-the-ocean">
-                    <div id="out-on-the-ocean" class="tune" >
-                        <pre>T: Out On The Ocean
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#out-on-the-ocean">
+                        <div id="out-on-the-ocean" class="tune" >
+                            <pre>T: Out On The Ocean
 R: Jig
 M: 6/8
 L: 1/8
@@ -281,33 +329,37 @@ K: Gmaj
 "G"D2B BAG|BdB "D"ABA|"G"GED G2A|1 "C"BGF "G"GFE:|2 "C"BGF "G"GBd||
 |:"Em"e2e edB|ege edB|"D"d2d dBA|ded dBA|
 "G"G2A B2d|ege "D"dBA|"G"GED G2A|1 "C"BGF "G"GBd:|2 "C"BGF "G"G3||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Kesh - Morrison's - Tripping Up the Stairs
-            <div class="tune-additional-data">
-                
-                    <h4>Audio References</h4>
+            <button class="accordion">
+                Kesh - Morrison's - Tripping Up the Stairs
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
                     
-                        <div class="audio-container">
-                            <h5 class="audio-title">Kesh - Morrison's - Tripping Up the Stairs (unaccompanied)</h5>
-                            <h5>Instrument: flute</h5>
-                            <audio controls>
-                                <source src="static/audio/Kesh - Morrsion - Tripping - flute - 100 bpm.mp3" type="audio/mp3">
-                            </audio>
-                        </div>
+                        <h4>Audio References</h4>
+                        
+                            <div class="audio-container">
+                                <h5 class="audio-title">Kesh - Morrison's - Tripping Up the Stairs (unaccompanied)</h5>
+                                <h5>Instrument: flute</h5>
+                                <audio controls>
+                                    <source src="static/audio/Kesh - Morrsion - Tripping - flute - 100 bpm.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        
                     
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#kesh">
-                    <div id="kesh" class="tune" >
-                        <pre>T: The Kesh
+                    <a href="tune.html#kesh">
+                        <div id="kesh" class="tune" >
+                            <pre>T: The Kesh
 R: Jig
 M: 6/8
 L: 1/8
@@ -316,12 +368,12 @@ K: Gmaj
   G3 GAB|A3 ABd|edd gdB|AGF G3:|
 |:B3 dBd|ege dBA|B2B dBG|A3 AGA|
   B3 dBd|ege dBd|g3 aga|bgf g3:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#morrisons">
-                    <div id="morrisons" class="tune" >
-                        <pre>T: Morrison's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#morrisons">
+                        <div id="morrisons" class="tune" >
+                            <pre>T: Morrison's
 R: Jig
 M: 6/8
 L: 1/8
@@ -332,12 +384,12 @@ Bee fee|aee fee|Bee fee|a2g fed|
 Bee fee|aee fee|gfe d2A|BAG FGA|
 Bee fee|aee fee|Bee fee|faf def|
 g3 gfe|def g2d|edc d2A|BAG FED|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#tripping-up-the-stairs">
-                    <div id="tripping-up-the-stairs" class="tune" >
-                        <pre>T: Tripping Up the Stairs
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#tripping-up-the-stairs">
+                        <div id="tripping-up-the-stairs" class="tune" >
+                            <pre>T: Tripping Up the Stairs
 R: Jig
 M: 6/8
 L: 1/8
@@ -346,22 +398,26 @@ K: Dmaj
 FAA GBB|FAd fed|c2c ABc|1)dfe d2A:|2)dfe dBc||
 |:dBB fBB|f3 fed|cAA eAA|e3 edc|
 dBB fBB|f3 fed|cBc ABc|1)dfe dBc:||2)dfe d2A||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Larry O'Gaff's - Geese in the Bog - Jimmy Ward's
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Larry O'Gaff's - Geese in the Bog - Jimmy Ward's
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#larry-ogaffs">
-                    <div id="larry-ogaffs" class="tune" >
-                        <pre>T: Larry O'Gaff's
+                    <a href="tune.html#larry-ogaffs">
+                        <div id="larry-ogaffs" class="tune" >
+                            <pre>T: Larry O'Gaff's
 R: Jig
 M: 6/8
 L: 1/8
@@ -370,12 +426,12 @@ A|:d2D FED|ABA AFD|GBG    FAF|  EFG ABc |
    d2D FED|ABA AFD|GBG    FAF|1)EFE D2A:|2)EFE D3 ||
  |:ABc d3 |efe edB|AB/c/d ede|  fdc dcB |
    ABc d3 |ABA AFD|G3     FGF|1)EFE D3 :|2)EFG ABc||d3</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#geese-in-the-bog">
-                    <div id="geese-in-the-bog" class="tune" >
-                        <pre>T: The Geese In The Bog
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#geese-in-the-bog">
+                        <div id="geese-in-the-bog" class="tune" >
+                            <pre>T: The Geese In The Bog
 R: Jig
 M: 6/8
 L: 1/8
@@ -384,12 +440,12 @@ K: Ador
     cEE GEE|cEE GAB|cBA GED|E2A A2 :||
 |:B|cde ged|e2a ged|cde ged|e2a a3  |
     cde ged|e2a ged|cBA GED|E2A A2 :|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#jimmy-wards">
-                    <div id="jimmy-wards" class="tune" >
-                        <pre>T: Jimmy Ward's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#jimmy-wards">
+                        <div id="jimmy-wards" class="tune" >
+                            <pre>T: Jimmy Ward's
 R: Jig
 M: 6/8
 L: 1/8
@@ -398,33 +454,37 @@ K: Gmaj
   G3  GAB|AGE GAB|cBA BGE|1)DED DEF:|2)DED D2B||
 |:cBA BAG|A3 AGE|cBA  BGE|  DED GAB|
   cBA BAG|A2A ABc|dcA AGE|1)GED D2B:|2)GED DEF||G6||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Connaughtman's Rambles - Pipe On The Hob
-            <div class="tune-additional-data">
-                
-                    <h4>Audio References</h4>
+            <button class="accordion">
+                Connaughtman's Rambles - Pipe On The Hob
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
                     
-                        <div class="audio-container">
-                            <h5 class="audio-title">Connaughtman's Rambles - Pipe On the Hob (unaccompanied)</h5>
-                            <h5>Instrument: flute</h5>
-                            <audio controls>
-                                <source src="static/audio/Conn - Pipe On the Hob - flute - 100 bpm.mp3" type="audio/mp3">
-                            </audio>
-                        </div>
+                        <h4>Audio References</h4>
+                        
+                            <div class="audio-container">
+                                <h5 class="audio-title">Connaughtman's Rambles - Pipe On the Hob (unaccompanied)</h5>
+                                <h5>Instrument: flute</h5>
+                                <audio controls>
+                                    <source src="static/audio/Conn - Pipe On the Hob - flute - 100 bpm.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        
                     
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#connaughtmans-rambles">
-                    <div id="connaughtmans-rambles" class="tune" >
-                        <pre>T: Connaughtman's Rambles
+                    <a href="tune.html#connaughtmans-rambles">
+                        <div id="connaughtmans-rambles" class="tune" >
+                            <pre>T: Connaughtman's Rambles
 R: Jig
 M: 6/8
 L: 1/8
@@ -433,12 +493,12 @@ K: Dmaj
   FAA dAA|BAB def|gfe dfe|1 d2B BAG:|2 d2B B2g||
 |:fbb faa|fef ded|fbb faa|  fed e3  |
   fbb faa|fef def|gfe dfe|1 d2B B2g:|2 d2B BAG||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#pipe-on-the-hob">
-                    <div id="pipe-on-the-hob" class="tune" >
-                        <pre>T: The Pipe On The Hob
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#pipe-on-the-hob">
+                        <div id="pipe-on-the-hob" class="tune" >
+                            <pre>T: The Pipe On The Hob
 R: jig
 M: 6/8
 L: 1/8
@@ -449,9 +509,10 @@ A|: d^cd A2G |F2D DED |EDE cBc|  E2D DFA  |
  [1 f2d d^cd |f2d d^cd|ede age|  ed^c d2e:|
  [2 ~f3 ~g3  |agf g2e |fed eag|  ed^c d2A||
 </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -501,14 +562,17 @@ A|: d^cd A2G |F2D DED |EDE cBc|  E2D DFA  |
     
         
         <li class="set-name">
-            A Fig For A Kiss - O'Farrell's Welcome to Limerick
-            <div class="tune-additional-data">
+            <button class="accordion">
+                A Fig For A Kiss - O'Farrell's Welcome to Limerick
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#a-fig-for-a-kiss">
-                    <div id="a-fig-for-a-kiss" class="tune" >
-                        <pre>T: A Fig For A Kiss
+                    <a href="tune.html#a-fig-for-a-kiss">
+                        <div id="a-fig-for-a-kiss" class="tune" >
+                            <pre>T: A Fig For A Kiss
 M: 9/8
 L: 1/8
 R: Slip Jig
@@ -516,12 +580,12 @@ K: Edor
 |:"Em"G2B E2B BAG|"D"F2A D2A AGF|"Em"G2B E2B BAG|"D"BdB AGF "Em"E3:|
 "Em"g2e g2e edB|"D"f2d dcd fed|"Em"g2e g2e edB|"Bm"dBG ABd "Em"e2f|
 "Em"g2e g2e edB|"D"f2d dcd fed|"Em"gfe "D"fed "Em"efg|"Bm"BdB AGF "Em"E3||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#ofarrells-welcome-to-limerick">
-                    <div id="ofarrells-welcome-to-limerick" class="tune" >
-                        <pre>T: O'Farrell's Welcome to Limerick
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#ofarrells-welcome-to-limerick">
+                        <div id="ofarrells-welcome-to-limerick" class="tune" >
+                            <pre>T: O'Farrell's Welcome to Limerick
 C: O'Farrell
 N: O'Farrell (first name unknown) published . . .
 R: Slip Jig
@@ -533,22 +597,26 @@ K: Gmaj
 |:"D"FGA AFd AFd|AFd AFA GED|FGA AFA "C"c2A|"G"BAG FAF GED:|
 |:"D"DED DED "C"c3|c2B c2A GED|"D"DED DED "G"d2A|dfe dcA GED:|
 |:"D"d^cd ege "C"=c2A|"D"d^cd fdf "G"gfg|"D"afa ged "C"c2A|"G"BAG FAF GED:| </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Barony Jig, The - Snowy Path, The
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Barony Jig, The - Snowy Path, The
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#barony-jig-the">
-                    <div id="barony-jig-the" class="tune" >
-                        <pre>T: The Barony Jig
+                    <a href="tune.html#barony-jig-the">
+                        <div id="barony-jig-the" class="tune" >
+                            <pre>T: The Barony Jig
 S: O'Neill - Dance Music of Ireland: 1001 Gems (1907), No. 970
 R: Slip Jig
 M: 9/8
@@ -558,12 +626,12 @@ K: Am
 c2A c2A AGE|c2A ABd e2d|c2A efd cBA|GED DEG A2:|
 |:B|c2d ecA AGE|c2d efd e2d|c2d ecA AGE|GED DEG A2B|
 c2d ecA AGE|c2d efd e2e|cde ged ecA|GED DEG A2:||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#snowy-path-the">
-                    <div id="snowy-path-the" class="tune" >
-                        <pre>T: The Snowy Path
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#snowy-path-the">
+                        <div id="snowy-path-the" class="tune" >
+                            <pre>T: The Snowy Path
 C: Mark Kelly
 R: slip jig
 M: 9/8
@@ -573,22 +641,26 @@ K: Dmaj
 "D"F2A B2F A2F|"G"G2B d2e dBA|"D"F2A B2F A2F|"Em"E2D E2F GAB||
 "A"c3 c2e d2c|"G"B2G B2c d2e|"Bm"f3 f2e d2B|"D"A2G F2G A2B|
 "A"c3 c2e d2c|"G"B2G B2c d2e|"D"d2A B2F A2F|"Em"E2D E2F GFE||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Little Fair Canavans - Redigan's Mother - Humours of Derrycrossane
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Little Fair Canavans - Redigan's Mother - Humours of Derrycrossane
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#little-fair-canavans">
-                    <div id="little-fair-canavans" class="tune" >
-                        <pre>T: Little Fair Canavans
+                    <a href="tune.html#little-fair-canavans">
+                        <div id="little-fair-canavans" class="tune" >
+                            <pre>T: Little Fair Canavans
 R: Slip Jig
 M: 9/8
 L: 1/8
@@ -596,24 +668,24 @@ K: G
 |:  A|BAG AGE GED|EGD DEG A2c|BAG AGE GED|EGD DEF G2:|
 |:  A|Bdd edd BAG|Bdd edB A2c|Bdd edd BAG|GED DEF G2:|
 </pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#redigans-mother">
-                    <div id="redigans-mother" class="tune" >
-                        <pre>T: Redican's Mother
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#redigans-mother">
+                        <div id="redigans-mother" class="tune" >
+                            <pre>T: Redican's Mother
 R: slip jig
 M: 9/8
 L: 1/8
 K: Dmaj
   A|FAA FAd AFD|FAA FAd B2A|FAA FAd AFD|EDB, DFA B2:|
 |:e|f3 faf edB|Aff fef g2e |f3 faf edB|AFE DFA B2 :|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#humours-of-derrycrossane">
-                    <div id="humours-of-derrycrossane" class="tune" >
-                        <pre>T: Humours of Derrycrossane
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#humours-of-derrycrossane">
+                        <div id="humours-of-derrycrossane" class="tune" >
+                            <pre>T: Humours of Derrycrossane
 R: slip jig
 M: 9/8
 L: 1/8
@@ -621,9 +693,10 @@ K: G
 G|:B2B BAB c2c|BAG BdB ABc|BAG BdB cde|1)dBG GAF G2A:|2) dBG GAF GBd||
  |:g3  edc Bcd|ecA ABG A2d|g2g edc Bcd|  gdB GAF GBd |
    g3  edc Bcd|ecA ABG A2B|def gfe def|  gbg agf gdc ||  B3</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -673,25 +746,28 @@ G|:B2B BAB c2c|BAG BdB ABc|BAG BdB cde|1)dBG GAF G2A:|2) dBG GAF GBd||
     
         
         <li class="set-name">
-            I Looked East And I Looked West - Julia Clifford's - Scartaglen
-            <div class="tune-additional-data">
-                
-                    <h4>Audio References</h4>
+            <button class="accordion">
+                I Looked East And I Looked West - Julia Clifford's - Scartaglen
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
                     
-                        <div class="audio-container">
-                            <h5 class="audio-title">Julia Clifford's - I Looked East And I Looked West - Scartaglen (unaccompanied)</h5>
-                            <h5>Instrument: fiddle</h5>
-                            <audio controls>
-                                <source src="static/audio/Julia Clifford's - I Looked East And I Looked West - Scartaglen (unaccompanied).mp3" type="audio/mp3">
-                            </audio>
-                        </div>
+                        <h4>Audio References</h4>
+                        
+                            <div class="audio-container">
+                                <h5 class="audio-title">Julia Clifford's - I Looked East And I Looked West - Scartaglen (unaccompanied)</h5>
+                                <h5>Instrument: fiddle</h5>
+                                <audio controls>
+                                    <source src="static/audio/Julia Clifford's - I Looked East And I Looked West - Scartaglen (unaccompanied).mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                        
                     
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#i-looked-east-and-i-looked-west">
-                    <div id="i-looked-east-and-i-looked-west" class="tune" >
-                        <pre>T:I Looked East And I Looked West
+                    <a href="tune.html#i-looked-east-and-i-looked-west">
+                        <div id="i-looked-east-and-i-looked-west" class="tune" >
+                            <pre>T:I Looked East And I Looked West
 R:Polka
 M:2/4
 L:1/8
@@ -700,12 +776,12 @@ GB BA/G/|FA AB/A/|GA Bc|   d2 cA     |
 GA BA/G/|FA A>B  |cA FA|1) G2 GD    :|2) G2 GB/c/||
 dg fe   |fA A>B  |cd ef|   g2 fe     |
 dg fe   |fA A>B  |cA FA|1) G2 GB/c/ :|2) g2 GD||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#julia-cliffords">
-                    <div id="julia-cliffords" class="tune" >
-                        <pre>T:Julia Clifford's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#julia-cliffords">
+                        <div id="julia-cliffords" class="tune" >
+                            <pre>T:Julia Clifford's
 R:Polka
 M:2/4
 L:1/8
@@ -714,12 +790,12 @@ f>a ge|f>a ge |fd ed      |  e/f/e/d/ Bd    |
 f>a ge|f>a ge |fd e/f/e/c/|1)d2       de   :|2) d2 dB||
 A2 A>B|Af  a>f|ed ef/e/   |  dA       Bd/B/ |
 A2 AF |Af  a>f|ed ef/e/   |1)d2       dB   :|2) d2 d2||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#scartaglen">
-                    <div id="scartaglen" class="tune" >
-                        <pre>T:Scartaglen
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#scartaglen">
+                        <div id="scartaglen" class="tune" >
+                            <pre>T:Scartaglen
 R:Polka
 M:2/4
 L:1/8
@@ -730,22 +806,26 @@ Gg    g2      |fe e/f/g/e/|dB B/A/G/A/|  BA AB/A/ |
 Gg    g2      |fe e/f/g/e/|dB AB/A/   |1)G2 BB/A/ |2)G2 GA/B/||
 g2    a2      |b2 ba      |g2 a2      |  b2 ba    |
 gb    e/f/g/e/|dB g>e     |dB AB/A/   |1)G2 GA/B/ |2)G2 BB/A/||G4|</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Ballydesmond Polka 1 - Egan's - Ballydesmond Polka 2
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Ballydesmond Polka 1 - Egan's - Ballydesmond Polka 2
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#ballydesmond-polka-1">
-                    <div id="ballydesmond-polka-1" class="tune" >
-                        <pre>T: Ballydesmond Polka 1
+                    <a href="tune.html#ballydesmond-polka-1">
+                        <div id="ballydesmond-polka-1" class="tune" >
+                            <pre>T: Ballydesmond Polka 1
 R: Polka
 M: 2/4
 L: 1/8
@@ -755,12 +835,12 @@ K: Ador
 |:a2 a>b|ag ef  |g2 g>a|ge ed |
   ea a>b|ag e>f |ge dB|A2 A2:|
 </pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#egans">
-                    <div id="egans" class="tune" >
-                        <pre>T: Egan's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#egans">
+                        <div id="egans" class="tune" >
+                            <pre>T: Egan's
 T: Peg Ryan's
 R: Polka
 M: 2/4
@@ -769,12 +849,12 @@ K: Dmaj
 |:"D"fA BA|fA BA|"G"d2 e>f|"A"ed BA|"D"fA BA|fA BA|"G"d2 e>f|"A"ed "D"d2:|
 |:"D"fa fe|ed BA|"G"d2 e>f|"A"ed BA|"D"fa fe|ed BA|"G"d2 e>f|"A"ed "D"d2:|
 </pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#ballydesmond-polka-2">
-                    <div id="ballydesmond-polka-2" class="tune" >
-                        <pre>T: Ballydesmond Polka 2
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#ballydesmond-polka-2">
+                        <div id="ballydesmond-polka-2" class="tune" >
+                            <pre>T: Ballydesmond Polka 2
 R: Polka
 M: 2/4
 L: 1/8
@@ -784,9 +864,10 @@ A/B/|:c2 B2      |AB/A/ G>A  |Bd ed|g2 ed|
 |:ea ag/e/   |dg gd   |ea ab|g2 ed|
 ea g/a/g/e/|dB GA/B/|ce dB|A2 A2:| 
 </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -836,14 +917,17 @@ ea g/a/g/e/|dB GA/B/|ce dB|A2 A2:|
     
         
         <li class="set-name">
-            Denis Murphy's - O'Keefe's - Going to the Well For Water
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Denis Murphy's - O'Keefe's - Going to the Well For Water
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#denis-murphys">
-                    <div id="denis-murphys" class="tune" >
-                        <pre>T: Denis Murphy's
+                    <a href="tune.html#denis-murphys">
+                        <div id="denis-murphys" class="tune" >
+                            <pre>T: Denis Murphy's
 R: Slide
 M: 12/8
 L: 1/8
@@ -852,12 +936,12 @@ K: D
   A2D FED F2A A2f|a2f efe d3  d3:|
 |:d2e f3  gfe f3 |gfe fed e2d Bcd|
   d2e f3  gfe f2f|a2f efe d3  d3:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#okeefes">
-                    <div id="okeefes" class="tune" >
-                        <pre>T: O'Keefe's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#okeefes">
+                        <div id="okeefes" class="tune" >
+                            <pre>T: O'Keefe's
 R: Slide
 M: 12/8
 L: 1/8
@@ -866,12 +950,12 @@ K: Ador
   A2e e2d BAB d3 |BAB d2e B2A A3:|
 |:e2a a2b a2g e2d|efg a2b a2g e2f|
   g3  gfe dBA G3 |BAB d2e B2A A3:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#going-to-the-well-for-water">
-                    <div id="going-to-the-well-for-water" class="tune" >
-                        <pre>T: Going To The Well For Water
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#going-to-the-well-for-water">
+                        <div id="going-to-the-well-for-water" class="tune" >
+                            <pre>T: Going To The Well For Water
 R: Slide
 M: 12/8
 L: 1/8
@@ -880,22 +964,26 @@ B|:A2f A2f A2f fed|  B2g B2g B2g gfe |
    cdc BcB Ace a2f|1 g2e cde d3  dcB:|2 g2e cde d3 d2e||
  |:f2f fed e2e edc|  d2d dcB c2c cBA |
    GBB GBB FAA FAA|1 EDE e2d cBc d2e:|2 EDE e2d cBc d3||</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Mom's Favorite - Brosna, The
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Mom's Favorite - Brosna, The
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#moms-favorite">
-                    <div id="moms-favorite" class="tune" >
-                        <pre>T: Mom's Favorite
+                    <a href="tune.html#moms-favorite">
+                        <div id="moms-favorite" class="tune" >
+                            <pre>T: Mom's Favorite
 T: The Knocknagree
 N: This setting and name comes from Maida McQuinn-Sugrue (b.1933), a student of Padraig O'Keeffe (1887-1963). Maida taught the tune to Terry "Cuz" Teahan (1905-1989) after they had both emigrated to Chicago. Teahan took to calling the tune "Teahan's Favorite", which Maida took umbrage with. She named the tune after her mother, who would always "dance around the kitchen" whenever she played it. Julia Clifford (1914-1997), also a student of O'Keeffe, recorded it as The Knocknagree.
 R: Slide
@@ -908,12 +996,12 @@ K: Dmaj
 "Em"B2e ede "D"f2a afa|"Bm"baf g2f "Em"e3 e2d|
 "Em"B2e ede "D"f2a afa|"Bm"baf g2f e2d B2g|
 "D"faf f2e efe B2A|FED FAF "Em"E3 E3||</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#brosna-the">
-                    <div id="brosna-the" class="tune" >
-                        <pre>T: The Brosna
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#brosna-the">
+                        <div id="brosna-the" class="tune" >
+                            <pre>T: The Brosna
 R: Slide
 M: 12/8
 L: 1/8
@@ -922,22 +1010,26 @@ K: Gmaj
 "G"D2G G2A BAB d2B|1 "D"A2D FED "G"G3 G2E:|2 "D"A2D FED "G"G3 GBd||
 |:"G"g2f efg f2e d2B|"C"c2B A2B c2d "D"e2f|
 "G"g2f efg f2e d2B|1 "C"c2A "D"F2A "G"G3 GBd:|2 "C"c2A "D"F2A "G"G3 G3|| </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Scattery Island - Jack Regan's
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Scattery Island - Jack Regan's
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#scattery-island">
-                    <div id="scattery-island" class="tune" >
-                        <pre>T: Scattery Island
+                    <a href="tune.html#scattery-island">
+                        <div id="scattery-island" class="tune" >
+                            <pre>T: Scattery Island
 C: Arr: Julia Clifford
 R: Slide
 M: 12/8
@@ -947,12 +1039,12 @@ K: Dmaj
 "D"F2A d2f F2A d3|"A"e2A cBA f2e "D"d3:|
 |:"D"faa f2e d3 def|"G"g2f e2d Bcd "A"efg|
 "D"faa f2e d3 def|"G"g2f ecA "A"f2e "D"d3:|</pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#jack-regans">
-                    <div id="jack-regans" class="tune" >
-                        <pre>T: Jack Regan's
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#jack-regans">
+                        <div id="jack-regans" class="tune" >
+                            <pre>T: Jack Regan's
 T: The Tuar Mor, The Toormore
 C: Arr: Johnny O'Leary
 R: Slide
@@ -963,9 +1055,10 @@ K: Bmin
 "Bm"F2B BAB d2e faf|"A"e2d B2A "Bm"B3 B3:|
 |:"Bm"f3 "A"efe "Bm"ded "A"cdc|"G"BAB edB "A"AFE EDE|
 "Bm"F2B BAB d2e faf|"A"e2d B2A "Bm"B3 B3:|</pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -1015,14 +1108,17 @@ K: Bmin
     
         
         <li class="set-name">
-            Stack of Barley, The - Bantry Bay
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Stack of Barley, The - Bantry Bay
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#stack-of-barley-the">
-                    <div id="stack-of-barley-the" class="tune" >
-                        <pre>T: Stack of Barley, The
+                    <a href="tune.html#stack-of-barley-the">
+                        <div id="stack-of-barley-the" class="tune" >
+                            <pre>T: Stack of Barley, The
 R: Hornpipe
 M: 2/2
 L: 1/8
@@ -1032,12 +1128,12 @@ K: G
 |:GA|"G"BABd    g2fg|"Em"agfg    edBd|"C"g2fg edBd|"D"e2A2 A2fg|
      "D"agfa "C"gedB|"G/B"cBAG "D"AcBA|"G"GFGA Bd Ac|"G"B2"D/F#"G2 "G"G2:|
 </pre>
-                    </div>
-                </a>
-            
-                <a href="tune.html#bantry-bay">
-                    <div id="bantry-bay" class="tune" >
-                        <pre>T: Bantry Bay
+                        </div>
+                    </a>
+                
+                    <a href="tune.html#bantry-bay">
+                        <div id="bantry-bay" class="tune" >
+                            <pre>T: Bantry Bay
 T: Little Stack of Wheat
 R: hornpipe
 M: 4/4
@@ -1048,9 +1144,10 @@ GA|:"G"BGAG "C"EGDE|"G"G2"C"GF "G"GBAG|"C"EGAB "D7"cBAG|"Am"E2A2 A3B|
 |:"G"dBGB dBGA|"Em"B2e2 e3f|"C"gfed "G"BGBd|"C"(3gag "D7"fa "G"g2g2|
 "G"gagf "C"efed|"G"BGAG "C"EGD2|"G"BGAG "C"EG (3DEF|1)"G"G2"C"GF "G"G2Bc:|1)"G"G2"C"GF "G"G4:|
 </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -1100,14 +1197,17 @@ GA|:"G"BGAG "C"EGDE|"G"G2"C"GF "G"GBAG|"C"EGAB "D7"cBAG|"Am"E2A2 A3B|
     
         
         <li class="set-name">
-            Shoe The Donkey
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Shoe The Donkey
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#shoe-the-donkey">
-                    <div id="shoe-the-donkey" class="tune" >
-                        <pre>T: Shoe The Donkey
+                    <a href="tune.html#shoe-the-donkey">
+                        <div id="shoe-the-donkey" class="tune" >
+                            <pre>T: Shoe The Donkey
 R: Mazurka
 M: 3/4
 L: 1/8
@@ -1116,9 +1216,10 @@ DG|:"G"B2 B2 DG|B2 B2 DG|B2 c2 B2|"D"A4 DF|
 A2 A2 DF|A2 A2 DF|A2 B2 A2|1 "G"G4 DG:|2 "G"G3 ABc||
 |:"G"d2 g2 f2|"D"A3 GAB|c2 e2 d2|"G"B4 Bc|
 B2 A2 B2|"C"c3 Bcd|1 e2 d2 c2|"G"B3 ABc:|2 e2 d2 "D"F2|"G" G4|| </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -1168,14 +1269,17 @@ B2 A2 B2|"C"c3 Bcd|1 e2 d2 c2|"G"B3 ABc:|2 e2 d2 "D"F2|"G" G4|| </pre>
     
         
         <li class="set-name">
-            South Wind
-            <div class="tune-additional-data">
+            <button class="accordion">
+                South Wind
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#south-wind">
-                    <div id="south-wind" class="tune" >
-                        <pre>T: South Wind
+                    <a href="tune.html#south-wind">
+                        <div id="south-wind" class="tune" >
+                            <pre>T: South Wind
 R: Waltz
 M: 3/4
 L: 1/8
@@ -1187,22 +1291,26 @@ dc|: B3A G2|B3c d2   |  A3 BA2|A4 dc    |
      g4  g2|g2  f2 e2|  d3 ed2|d4   c2  |
      B3A G2|Bc3 GA   |  G6-   |G6      :|
 </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
         
         <li class="set-name">
-            Si Beag Si Mor
-            <div class="tune-additional-data">
+            <button class="accordion">
+                Si Beag Si Mor
+            </button>
+            <div class="panel">
+                <div class="tune-additional-data">
+                    
+                </div>
                 
-            </div>
-            
-                <a href="tune.html#si-beag-si-mor">
-                    <div id="si-beag-si-mor" class="tune" >
-                        <pre>T: Si Beag Si Mor
+                    <a href="tune.html#si-beag-si-mor">
+                        <div id="si-beag-si-mor" class="tune" >
+                            <pre>T: Si Beag Si Mor
 R: Waltz
 M: 3/4
 L: 1/8
@@ -1212,9 +1320,10 @@ d4 f2|B4 e2|A4 d2|F4 E2|D4 f2|B4 e2|A4 dc|d6|d4 de:|
 |:f2 fe d2|ed ef a2|b4 a2|f4 ed|e2 e2 a2|f4 e2|d4 B2|B4 BA|
 F4 E2|D4 f2|B4 e2|A4 a2|ba gf ed|e4 dc|d6|1 d4 de:|2 d6||
 </pre>
-                    </div>
-                </a>
-            
+                        </div>
+                    </a>
+                
+            </div>
         </li>
         
     
@@ -1239,6 +1348,23 @@ F4 E2|D4 f2|B4 e2|A4 a2|ba gf ed|e4 dc|d6|1 d4 de:|2 d6||
 <div class="bottom-padding"></div>
 
 <!-- After Javascript -->
+
+<script type="text/javascript">
+    /** Accordion Functionality **/
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 <script type="text/javascript">
     var els = document.getElementsByClassName('tune');
